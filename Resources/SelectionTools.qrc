@@ -1,0 +1,6 @@
+<RCC>
+    <qresource> 
+        <file>ui/SelectionToolsSettings.ui</file>
+        <file>icons/preferences-selectiontools.svg</file>
+    </qresource>
+</RCC> 

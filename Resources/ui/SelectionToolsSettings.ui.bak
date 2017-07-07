@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QWidget" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>398</width>
+    <height>299</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Selection Tools</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="listSelectGrp">
+     <property name="title">
+      <string>List Select</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="3" column="0">
+       <widget class="QLabel" name="shortcutLbl">
+        <property name="text">
+         <string>Keyboard shortcut:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <widget class="Gui::PrefCheckBox" name="activatedCheck">
+        <property name="text">
+         <string>Tool activated</string>
+        </property>
+        <property name="prefEntry" stdset="0">
+         <cstring>activated</cstring>
+        </property>
+        <property name="prefPath" stdset="0">
+	 <cstring>Mod/SelectionTools/ListSelect</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="transparencyLbl">
+        <property name="text">
+         <string>Transparency:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="Gui::PrefSpinBox" name="transparencySBox">
+        <property name="maximumSize">
+         <size>
+          <width>150</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="maximum">
+         <number>100</number>
+        </property>
+        <property name="prefEntry" stdset="0">
+         <cstring>transparency</cstring>
+        </property>
+        <property name="prefPath" stdset="0">
+	 <cstring>Mod/SelectionTools/ListSelect</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="Gui::PrefLineEdit" name="lineEdit">
+        <property name="maximumSize">
+         <size>
+          <width>150</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="prefEntry" stdset="0">
+         <cstring>shortcut</cstring>
+        </property>
+        <property name="prefPath" stdset="0">
+	 <cstring>Mod/SelectionTools/ListSelect</cstring>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Gui::PrefSpinBox</class>
+   <extends>QSpinBox</extends>
+   <header>Gui/PrefWidgets.h</header>
+  </customwidget>
+  <customwidget>
+   <class>Gui::PrefCheckBox</class>
+   <extends>QCheckBox</extends>
+   <header>Gui/PrefWidgets.h</header>
+  </customwidget>
+  <customwidget>
+   <class>Gui::PrefLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>Gui/PrefWidgets.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
